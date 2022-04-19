@@ -14,8 +14,8 @@ body {
     background-color: hsl(217, 19%, 24%);
     border-radius: 10px;
     width: 600px;
-    min-height: 250px;
-    max-height: 260px;
+    height: 350px;
+    max-height: 350px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -26,6 +26,7 @@ body {
     color: hsl(193, 38%, 86%);
     font-weight: 800;
     padding: 10px 50px;
+    height: 200px;
 }
 
 .quote-number {
@@ -53,5 +54,9 @@ body {
 
 .dice-wrapper:focus {
     outline: none;
+}
+
+.dice-wrapper:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 

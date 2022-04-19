@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  const [advice, setAdvice] = useState("");
+  const [advice, setAdvice] = useState({
+    id: "",
+    advice: "Click dice to get advice!",
+  });
 
   function handleClick() {
     fetch("https://api.adviceslip.com/advice")
